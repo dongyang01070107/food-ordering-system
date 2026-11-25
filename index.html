@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6ef">
+  <meta name="description" content="早安蛋餅鋪・現點現做的台式早餐。線上點餐，到店付款。">
+  <title>早安蛋餅鋪｜把早晨煎得剛剛好</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span>早起的好心情，從一份現煎早餐開始 <span>｜</span> 到店付款・不收線上金流</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="早安蛋餅鋪首頁">
+      <img src="assets/logo.svg" alt="早安蛋餅鋪 Logo" width="54" height="54">
+      <span><b>早安蛋餅鋪</b><small>GOOD MORNING, TAIPEI</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主選單"><a href="#menu">早餐菜單</a><a href="#about">關於我們</a><a href="#pickup">取餐資訊</a></nav>
+    <div class="header-actions"><button class="admin-link" id="adminOpen">店家後台 <span aria-hidden="true">↗</span></button><button class="cart-button" id="cartOpen" aria-label="打開購物車"><span class="cart-icon" aria-hidden="true">▱</span><span>購物車</span><b id="cartCount">0</b></button><button class="menu-toggle" id="menuToggle" aria-label="開啟選單">☰</button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><div class="eyebrow"><span>台式早餐・每日現做</span><span class="eyebrow-line"></span></div>
+        <h1>把早晨，<br><em>煎得剛剛好。</em></h1>
+        <p>熱騰騰的蛋餅、剛烤好的吐司，<br class="desktop-only">再配一杯熟悉的早餐飲品。今天也要好好吃早餐。</p>
+        <a class="primary-button" href="#menu">看看今天吃什麼 <span>↓</span></a>
+        <div class="hero-note"><span class="sun-icon">☀</span> 每一份，都是點餐後現做</div>
+      </div>
+      <div class="hero-art" aria-label="現煎玉米起司蛋餅插畫">
+        <div class="hero-art-back"></div><div class="hero-stamp">GOOD<br><b>MORNING</b><br>☼</div>
+        <img src="assets/menu/corn-cheese.svg" alt="玉米起司蛋餅手繪插畫" class="hero-food">
+        <div class="hero-caption"><span>01 / 招牌推薦</span><b>玉米起司蛋餅</b><small>今天，就從喜歡的開始。</small></div>
+        <div class="hero-spark spark-one">✳</div><div class="hero-spark spark-two">✴</div>
+      </div>
+      <div class="hero-side-note">EST. WITH LOVE · TAIWANESE BREAKFAST</div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading"><div><div class="eyebrow"><span>THE BREAKFAST MENU</span></div><h2>今天想吃哪一種？</h2></div><p>選一份喜歡的早餐，客製口味後加入購物車。<br>每道餐點都附上手繪 SVG 插畫。</p></div>
+      <div class="category-tabs" role="tablist" aria-label="餐點分類"><button class="category-tab active" data-category="all" role="tab">全部 <span>09</span></button><button class="category-tab" data-category="蛋餅" role="tab">蛋餅 <span>03</span></button><button class="category-tab" data-category="吐司" role="tab">吐司 <span>03</span></button><button class="category-tab" data-category="早餐飲品" role="tab">早餐飲品 <span>03</span></button></div>
+      <div class="menu-grid" id="menuGrid"></div>
+      <div class="menu-footnote"><span>✳</span> 點開餐點可選加料、醬料與數量。加料會即時更新價格。</div>
+    </section>
+
+    <section class="about-section" id="about"><div class="about-mark">早</div><div><div class="eyebrow"><span>MADE FRESH, MADE WITH CARE</span></div><h2>早晨值得一點<br><em>熱騰騰的用心。</em></h2><p>我們相信，早餐不只是填飽肚子。是剛起鍋的蛋餅香、吐司邊的一點酥脆，還有每天照常和你說早安的日常。</p><a class="text-link" href="#menu">回到菜單 <span>→</span></a></div><div class="about-card"><span class="about-card-icon">☼</span><small>FRESHLY MADE</small><b>現點・現做</b><p>保留一點等待，<br>把新鮮留在每一口。</p><div class="about-card-line"></div><span class="about-card-bottom">早安蛋餅鋪・台式早餐</span></div></section>
+
+    <section class="pickup-section" id="pickup"><div><div class="eyebrow"><span>YOUR MORNING, YOUR WAY</span></div><h2>線上點好，<br>到店付款取餐。</h2><p>結帳時留下姓名、手機與取餐時間。送出訂單後，我們就會開始準備你的早餐。</p></div><div class="pickup-steps"><div><b>01</b><span>挑選早餐<br><small>選餐點與喜歡的口味</small></span></div><div><b>02</b><span>送出訂單<br><small>填寫聯絡資訊與取餐時間</small></span></div><div><b>03</b><span>到店付款<br><small>依取餐時間到店結帳</small></span></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#top"><img src="assets/logo.svg" alt="" width="48" height="48"><span><b>早安蛋餅鋪</b><small>GOOD MORNING, TAIPEI</small></span></a><p>用一份熱騰騰的台式早餐，<br>好好開始今天。</p><a href="#menu" class="footer-menu-link">早餐菜單　↗</a></div><div class="footer-bottom"><span>© 2025 早安蛋餅鋪</span><span>到店付款・不收線上金流</span><span>視傳四勤　121253015　陳冬昀</span></div></footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="購物車" aria-hidden="true"><div class="drawer-header"><div><small>YOUR ORDER</small><h2>購物車 <span id="drawerCount">(0)</span></h2></div><button class="icon-button" data-close aria-label="關閉">×</button></div><div class="cart-content" id="cartContent"></div><div class="cart-summary" id="cartSummary"></div></aside>
+  <dialog class="modal" id="itemDialog"><button class="modal-close icon-button" data-dialog-close aria-label="關閉">×</button><div id="itemDialogContent"></div></dialog>
+  <dialog class="modal checkout-modal" id="checkoutDialog"><button class="modal-close icon-button" data-dialog-close aria-label="關閉">×</button><div id="checkoutContent"></div></dialog>
+  <dialog class="modal admin-modal" id="adminDialog"><button class="modal-close icon-button" data-dialog-close aria-label="關閉">×</button><div id="adminContent"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
